@@ -17,9 +17,9 @@ func main() {
 
 	fmt.Println()
 
-	sorting.SelectionSort(num[:])
+	sorting.BubbleSort(num[:])
 	
-	fmt.Println("Array ordenado pelo Selection Sort:")
+	fmt.Println("Array ordenado:")
 	for i:=0; i<len(num); i++{
 		fmt.Print(num[i], " ")
 	}
