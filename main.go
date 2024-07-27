@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"main/sorting"
 )
 
 //MAIN FUNCTION
@@ -16,33 +17,11 @@ func main() {
 
 	fmt.Println()
 
-	SelectionSort(num[:])
+	sorting.SelectionSort(num[:])
 	
 	fmt.Println("Array ordenado pelo Selection Sort:")
 	for i:=0; i<len(num); i++{
 		fmt.Print(num[i], " ")
 	}
 	fmt.Println()
-}
-
-
-
-//SELECTION SORT
-func SelectionSort(arr[]int){
-
-	var min int
-	var index int
-
-	for i:=0; i<len(arr); i++{
-		min = arr[i]
-		index = i
-		for j:=i+1; j < len(arr); j++{
-			if arr[j] < min{
-				min = arr[j]
-				index = j
-			}
-		}
-		arr[index] = arr[i]
-		arr[i] = min
-	}
 }

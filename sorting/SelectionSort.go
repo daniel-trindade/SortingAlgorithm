@@ -2,17 +2,19 @@ package sorting
 
 func SelectionSort(arr[]int){
 
-  var temp int
+  var min int
   var index int
-  
+
   for i:=0; i<len(arr); i++{
-    for j:=0; j < len(arr); j++{
-      if arr[i] > arr[j]{
-        temp = arr[j]
+    min = arr[i]
+    index = i
+    for j:=i+1; j < len(arr); j++{
+      if arr[j] < min{
+        min = arr[j]
         index = j
       }
     }
     arr[index] = arr[i]
-    arr[i] = temp
+    arr[i] = min
   }
 }
