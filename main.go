@@ -17,7 +17,7 @@ func main() {
 
 	fmt.Println()
 
-	sorting.BubbleSort(num[:])
+	sorting.InsertionSort(num[:])
 	
 	fmt.Println("Array ordenado:")
 	for i:=0; i<len(num); i++{
