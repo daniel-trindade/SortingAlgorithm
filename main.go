@@ -16,7 +16,7 @@ func main() {
 
 	fmt.Println()
 
-	sorting.MergeSort(num[:])
+	sorting.QuickSort(num[:], 0, len(num)-1)
 	
 	fmt.Println("Array ordenado:")
 	for i:=0; i<len(num); i++{
