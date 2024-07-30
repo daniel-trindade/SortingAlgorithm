@@ -1,5 +1,7 @@
 package sorting
 
+import "fmt"
+
 func InsertionSort(arr[] int){
 
   var temp int
@@ -10,5 +12,10 @@ func InsertionSort(arr[] int){
       arr[j-1] = arr[j]
       arr[j] = temp
     }
+    for j:=0;j<len(arr);j++{
+      fmt.Print(arr[j], " ")
+    }
+    fmt.Println()
   }
+  
 }

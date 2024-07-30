@@ -7,7 +7,7 @@ import (
 
 func main() {
 
-	var num [20]int = [20]int{20, 5, 68, 15, 9, 1, 44, 4, 88, 25, 10, 3, 99, 77, 55, 100, 2, 7, 6, 42}
+	var num [9]int = [9]int{3, 6, 2, 5, 4, 3, 7, 1, 10}
 
 	fmt.Println("Array desordenado:")
 	for i:=0; i<len(num); i++{
@@ -16,7 +16,7 @@ func main() {
 
 	fmt.Println()
 
-	sorting.QuickSort(num[:], 0, len(num)-1)
+	sorting.CountingSort(num[:])
 	
 	fmt.Println("Array ordenado:")
 	for i:=0; i<len(num); i++{

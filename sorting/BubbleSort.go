@@ -1,5 +1,7 @@
 package sorting
 
+import "fmt"
+
 func BubbleSort(arr[]int){
 
   var sorted bool = false
@@ -15,5 +17,9 @@ func BubbleSort(arr[]int){
         arr[i+1] = temp
       }
     }
+    for j:=0;j<len(arr);j++{
+      fmt.Print(arr[j], " ")
+    }
+    fmt.Println()
   } 
 }
